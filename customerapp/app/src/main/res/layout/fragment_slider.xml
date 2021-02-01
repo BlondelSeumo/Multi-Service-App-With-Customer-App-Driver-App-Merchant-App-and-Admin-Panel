@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="150dp">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:clipToPadding="false"
+        android:foregroundGravity="center"
+        android:overScrollMode="never" />
+
+    <me.relex.circleindicator.CircleIndicator
+        android:id="@+id/indicator_unselected_background"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        app:ci_animator="@anim/indicator_animator"
+        app:ci_drawable="@drawable/button_round_1"
+        app:ci_drawable_unselected="@drawable/button_round_2"
+        app:ci_height="5dp"
+        app:ci_margin="1dp"
+        app:ci_width="10dp" />
+
+</RelativeLayout>

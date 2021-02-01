@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="15dp">
+
+    <ImageView
+        android:id="@+id/notsend"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/ic_not_send_message"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/notsend">
+
+        <customfonts.TextViewSFProDisplayMedium
+            android:id="@+id/datetxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/round_edittext_background"
+            android:padding="5dp"
+            android:textAlignment="center"
+            android:textColor="@color/darkgray"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/audiobubble"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/audiobubble"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/datetxt"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/background_chat_other"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:id="@+id/playbtn"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:background="@color/transparent"
+                    android:clickable="false"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_play"
+                    android:tint="@color/colorPrimary" />
+
+                <SeekBar
+                    android:id="@+id/seekbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_toLeftOf="@+id/totaltime"
+                    android:clickable="false"
+                    android:theme="@style/MySeekBar2" />
+
+                <customfonts.TextViewSFProDisplayRegular
+                    android:id="@+id/totaltime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="10dp" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <customfonts.TextViewSFProDisplayMedium
+            android:id="@+id/messageseen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/audiobubble"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/darkgray"
+            android:textSize="10dp" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,32 @@
+/*========================================================
+        DARK LAYOUT
+=========================================================*/
+#chart-dashboard .img-left {
+  width: 200px;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+#chart-dashboard .img-right {
+  width: 175px;
+  position: absolute;
+  top: 0;
+  right: 0; }
+
+#chart-dashboard .bg-analytics {
+  background: linear-gradient(118deg, #7367f0, rgba(115, 103, 240, 0.7)); }
+  #chart-dashboard .bg-analytics .avatar {
+    margin-bottom: 2rem; }
+
+#chart-dashboard table tr th:first-child, #chart-dashboard table tr td:first-child {
+  padding-left: 2rem; }
+
+#chart-dashboard table tr th:last-child, #chart-dashboard table tr td:last-child {
+  padding-right: 2rem; }
+
+#chart-dashboard table td {
+  padding: .75rem; }
+
+@media only screen and (max-width: 576px) {
+  #chart-dashboard .img-left, #chart-dashboard .img-right {
+    width: 140px; } }

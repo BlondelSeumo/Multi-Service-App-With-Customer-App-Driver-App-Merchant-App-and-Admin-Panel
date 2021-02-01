@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#02AC43</color>
+    <color name="colorgradient">#28BF62</color>
+    <color name="colorgradienttransparent">#A34CAF50</color>
+    <color name="coloraccent">@color/colorPrimary</color>
+    <color name="white">#fff</color>
+    <color name="black">#2F2F2F</color>
+    <color name="orange">#ff120b</color>
+    <color name="red">#FF000E</color>
+    <color name="yellow">#ffbb00</color>
+    <color name="transparentblack">#b9000000</color>
+    <color name="backgroundgray">#f2f2f2</color>
+    <color name="parentcolor">@color/colorPrimary</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="graybackground">#e9e9e9</color>
+    <color name="darkgray">#AAAAAA</color>
+    <color name="light_gray">#FAF9F9</color>
+    <color name="light_gray_trans">#41FAF9F9</color>
+    <color name="dark_gray">#c4c4c4</color>
+    <color name="dimgray">#696969</color>
+    <color name="lightblack">#5d5d5d</color>
+    <color name="green">#04b110</color>
+    <color name="light_white">#fffefe</color>
+    <color name="off_white">#f8f6f8</color>
+    <color name="light_blue">#00c5ec</color>
+    <color name="silver_gray">#617085</color>
+    <color name="gray">#b6b6b6</color>
+    <color name="light_ferozi">#dbf6fd</color>
+    <color name="delete_message_text">#b8b8b8</color>
+    <color name="fiftypercenttranparent">#B96DC0FF</color>
+    <color name="alphabet_text_selected_color">#3F51B5</color>
+    <color name="splashbackground">#E2F2FE</color>
+    <color name="redgradient">#F55145</color>
+
+</resources>

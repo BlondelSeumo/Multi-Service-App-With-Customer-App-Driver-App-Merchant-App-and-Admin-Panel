@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">Ornids</string>
+    <string name="mapbox_access_token">sk.eyJ1IjoicGVyY29iYWFuIiwiYSI6ImNraGVhaWFjczA2OXcyemx1dnl3anBmdjIifQ.1CbagvxZLB_cymAYtxHQOw</string>
+
+    ////////
+    <string name="introtext1">Sign up now!</string>
+    <string name="introdesc1">Where did you go today? we will be ready to drive anywhere and anytime</string>
+    <string name="introtext2">Trackable</string>
+    <string name="introdesc2">Keep track of your packages location and driver, real-time.</string>
+    <string name="introtext3">Just Relax</string>
+    <string name="introdesc3">You can stay relax while we pick up and drop off your package, all within hours!</string>
+
+    <string name="exit">Are you sure you want to exit the application?</string>
+    <string name="yes">YES!</string>
+    <string name="no">NO</string>
+
+    <string name="email">Email</string>
+    <string name="verifydesc">We send a verification code to the number</string>
+    <string name="norecieve">I did not receive the code!</string>
+    <string name="resend">Resend Code</string>
+    <string name="confirm">Confirm</string>
+    <string name="privacy">By signing in, you agree to the  <![CDATA[<b><font color=#108A15>terms and conditions</font></b>]]></string>
+    <string name="text_with_bullet">\u2022</string>
+    <string name="lupa">Forgot Password?</string>
+    <string name="button_signIn">Login</string>
+    <string name="button_signUp"> Register</string>
+    <string name="button_dontHaveAccount">Dont Have Account? </string>
+    <string name="wrongnumber">Wrong phone number format </string>
+    <string name="phoneemailwrong">wrong phone or password</string>
+    <string name="phonepass">Phone and Password cannot be empty!</string>
+    <string name="phoneempty">Phone cannot be empty!</string>
+    <string name="passempty">Password cannot be empty!</string>
+    <string name="emailempty">Email cannot be empty!</string>
+
+    <string name="hint_name">Name</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_phone">Phone</string>
+    <string name="hint_birthday">Birthday</string>
+    <string name="hint_password">Password</string>
+
+    <string name="menu_home">home</string>
+    <string name="menu_chat">chat</string>
+    <string name="menu_order">Order</string>
+    <string name="menu_favourite">Favourite</string>
+    <string name="menu_profile">Profile</string>
+    <string name="text_cancel">Cancel</string>
+    <string name="getstarted">Get Started</string>
+
+    <string name="ride_location">Location</string>
+    <string name="ride_destination">Destination</string>
+
+    <string name="ride_note">Notes</string>
+
+    <string name="ride_setPickUp">Set PickUp</string>
+    <string name="ride_setDestination">Set Destination</string>
+    <string name="text_order">Order</string>
+    <string name="waiting_desc">We are searching for the closest driver</string>
+    <string name="waiting_pleaseWait">Please Wait....</string>
+    <string name="text_noInternet">No internet Access</string>
+
+    <string name="notification_cancel">Order has been canceled</string>
+    <string name="notification_start">to the destination location</string>
+    <string name="notification_accept">you found a driver</string>
+    <string name="notification_finish">thank you for using our services</string>
+    <string name="topup">Topup</string>
+    <string name="withdraw">withdraw</string>
+    <string name="promo">promo</string>
+    <string name="detail">Detail</string>
+
+</resources>

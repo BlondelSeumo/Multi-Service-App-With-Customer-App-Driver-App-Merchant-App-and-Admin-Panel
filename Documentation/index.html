@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ornids Documentation</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">    
+    <link rel="shortcut icon" href="favicon.ico">  
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <!-- FontAwesome JS -->
+    <script defer src="assets/fontawesome/js/all.js"></script>
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
+    <!-- Plugins CSS -->    
+    <link rel="stylesheet" href="assets/plugins/prism/prism.css">
+    <link rel="stylesheet" href="assets/plugins/elegant_font/css/style.css">  
+      
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+    
+</head> 
+
+<body class="body-blue">
+    <div class="page-wrapper">
+        <!-- ******Header****** -->
+        <header id="header" class="header">
+            <div class="container">
+                <div class="branding">
+                    <h1 class="logo">
+                        <a href="index.html">
+                            <span aria-hidden="true" class="icon_documents_alt icon"></span>
+                            <span class="text-highlight">Ornids</span><span class="text-bold">Docs</span>
+                        </a>
+                    </h1>
+                    
+                </div><!--//branding-->
+                
+            </div><!--//container-->
+        </header><!--//header-->
+        <div class="doc-wrapper">
+            <div class="container">
+                <div id="doc-header" class="doc-header text-center">
+                    <h1 class="doc-title"><i class="icon fa fa-paper-plane"></i> Quick Start</h1>
+                    <div class="meta"><i class="far fa-clock"></i> Last updated: September 24th, 2020</div>
+                </div><!--//doc-header-->
+                <div class="doc-body row">
+                    <div class="doc-content col-md-9 col-12 order-1">
+                        <div class="content-inner">
+                            <section id="introduction" class="doc-section">
+                                <h2 class="section-title">Introduction</h2>
+                                <div class="section-block">
+                                    <p>Thank you for purchasing the app. If you have any questions that are beyond the scope of this help file, please feel free to message us via our user page contact. Ornids is an on-demand vehicle ordering application with various services such as motorbike, car, delivery and car rental, in this latest update has added several new features such as food, shop, grocery, and med. customer make reservations through the mobile application and communicate with partner drivers or merchant through their application in realtime.
+                                    </p>
+                                </div>
+                            </section><!--//doc-section-->
+
+                            <section id="whatsinclude" class="doc-section">
+                                <h2 class="section-title">Whats Include?</h2>
+                                <div class="section-block">
+                                    <div class="col-md-6 col-12">
+                                        <ul class="list">
+                                            <li>Costumers APP (Android Source Code)</li>
+                                            <li>Driver APP (Android Source Code)</li>
+                                            <li>Merchant APP (Android Source Code)</li>
+                                            <li>Admin Panel</li>
+                                            <li>Documentation</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </section><!--//doc-section-->
+
+                            <section id="changelog" class="doc-section">
+                                <h2 class="section-title">Change Log</h2>
+                                <div class="section-block">
+                                    <p>Check for updates to this item below</p>
+                                </div>
+                                <div class="section-block">
+                                    <h6></h6>
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th style="width: 12px;">#</th>
+                                                    <th>Log</th>
+                                                    <th style="width: 20px;">Type</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">1</th>
+                                                    <td>NEW RELEASE</td>
+                                                    <td><p class="text-success">New</p></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div><!--//table-responsive-->
+
+                                    <h6>Latest Update</h6>
+
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th style="width: 12px;">#</th>
+                                                    <th>Log</th>
+                                                    <th style="width: 20px;">Type</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">1</th>
+                                                    <td>Migrate from "google maps" to "mapbox" on 3 apps and admin panel.</td>
+                                                    <td><p class="text-success">Migrate</p></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2</th>
+                                                    <td>Update STRIPE on 3 apps</td>
+                                                    <td><p class="text-success">Update</p></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">3</th>
+                                                    <td>Fix reset password issue on driver apps</td>
+                                                    <td><p class="text-danger">Fix</p></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">4</th>
+                                                    <td>Valuation feature on admin panel</td>
+                                                    <td><p class="text-success">New</p></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div><!--//table-responsive-->
+                                </div><!--//section-block-->
+
+                            
+                            </section><!--//doc-section-->
+
+
+                            <section id="firebase" class="doc-section">
+                                <h2 class="section-title">Firebase Configuration</h2>
+                                <div id="step1"  class="section-block">
+                                    <h3 class="block-title">1. Setup and create firebase project</h3>
+                                    <p>You must create a New Project in Firebase by logging into Firebase Console and then entering using your Google account if you don't sign in,
+                                        then create a new Project and specify the name you like for the project, then:</p>
+                                    <div class="code-block">
+                                        <ul class="list">
+                                            <li>click on Add Firebase to your Android app</li>
+                                            <li>copy the application Id from your build.gradle and paste it as Android Package Name</li>
+                                        </ul>
+                                        <img class="img-fluid" src="assets/images/firebase1.png" alt="elegant icons" />
+                                        <br>
+                                        <br>
+                                        <ul class="list">
+                                            <li>click on Register App > Next</li>
+                                            <li>click on Download google-services.json. it will download a .json file we will use it later</li>
+                                        </ul>
+                                        <img class="img-fluid" src="assets/images/firebase2.png" alt="elegant icons" />
+                                        <br>
+                                        <br>
+                                        <p>you can skip the remaining setup steps</p>
+                                        <p>next up copy the downloaded google-services.json and paste it in the path 'Ornids\app\' to make sure that your app is linked with your Firebase Project</p>
+                                        <h5 class="block-title">NOTE**: Register all applications, make sure you enter the customer, driver, and merchant app in the same firebase project</h5>
+                                    </div><!--//code-block-->
+                                </div><!--//section-block-->
+
+                                <div id="step2"  class="section-block">
+                                    <h3 class="block-title">2. Setup firebase realtime database</h3>
+                                    <div class="code-block">
+                                        <h5 class="block-title">Change database rules</h5>
+                                        <ul class="list">
+                                            <li>click on Database > Realtime Database > Rules</li>
+                                            <li>change ".read": false and ".write": false to ".read": true and ".write": true</li>
+                                        </ul>
+                                        <img class="img-fluid" src="assets/images/firebase3.png" alt="elegant icons" />
+                                        <h5 class="blocl-title">NOTE: if you did not change the firebase rules some of the app functions will not work like chat or save/change pictures.</h5>
+                                        <ul class="list">
+                                            <li id="firebasedb" class="section-block">where to find firebaseDB</li>
+                                        </ul>
+                                        <img class="img-fluid" src="assets/images/firebasedb.png" alt="elegant icons" />
+                                    </div><!--//code-block-->
+                                </div><!--//section-block-->
+
+                                <div id="step3"  class="section-block">
+                                    <h3 class="block-title">3. Setup firebase storage</h3>
+                                    <div class="code-block">
+                                        <h5 class="block-title">Change storage rules</h5>
+                                        <ul class="list">
+                                            <li>click on Storage > Realtime Database > Rules</li>
+                                            <li>allow read, write;</li>
+                                        </ul>
+                                        <img class="img-fluid" src="assets/images/firebase4.png" alt="elegant icons" />
+                                        <h5 class="blocl-title">NOTE: if you did not change the firebase rules some of the app functions will not work like chat or save/change pictures.</h5>
+                                    </div><!--//code-block-->
+                                </div><!--//section-block-->
+
+                                <div id="step4"  class="section-block">
+                                    <h3 class="block-title">4. Setup login phone</h3>
+                                    <div class="code-block">
+                                        <p>next up you have to Enable Phone Authentication in Firebase Console by going to :</p>
+                                        <ul class="list">
+                                            <li>click on Authentication > Sign-In Methode > click on Phone</li>
+                                            <li>enable it and save</li>
+                                        </ul>
+                                        <img class="img-fluid" src="assets/images/firebase5.png" alt="elegant icons" />
+                                    </div><!--//code-block-->
+                                </div><!--//section-block-->
+
+                                <div id="step5"  class="section-block">
+                                    <h3 class="block-title">5. Get fcm server key</h3>
+                                    <div class="code-block">
+                                        <ul class="list">
+                                            <li>go to project setting</li>
+                                            <li>click on cloud messaging tab</li>
+                                            <li>now you get the fcm server key</li>
+                                        </ul>
+                                        <img class="img-fluid" src="assets/images/fcm1.png" alt="elegant icons" />
+                                        <br>
+                                        <br>
+                                        <img class="img-fluid" src="assets/images/fcm2.png" alt="elegant icons" />
+                                    </div><!--//code-block-->
+                                </div><!--//section-block-->
+
+                                <div id="step6"  class="section-block">
+                                    <h3 class="block-title">6. How to insert sha1 fingerprint</h3>
+                                    <div class="code-block">
+                                        <p>in an Android project there are 2 fingerprints for each application, debug and release. Get the SHA1 Fingerprint then fill up SHA certificate fingerprints on firebase, you can follow the step below:
+                                            </p>
+                                            <p>
+                                                <a class="scrollto" href="#bstep10">click here </a>how to get android project SHA1
+                                            </p>
+                                        <ul class="list">
+                                            <li>go to project setting</li>
+                                            <li>click on general tab</li>
+                                            <li>add new fingerprint</li>
+                                        </ul>
+                                        <img class="img-fluid" src="assets/images/fcm1.png" alt="elegant icons" />
+                                        <br>
+                                        <br>
+                                        <img class="img-fluid" src="assets/images/getsha1.png" alt="elegant icons" />
+                                        <h5 class="blocl-title">NOTE: if you upload your application to the playstore, you need to add playstore sha1 certificate here, if you don't add it the application doesn't work properly.</h5>
+                                    </div><!--//code-block-->
+                                </div><!--//section-block-->
+                            </section><!--//doc-section-->
+
+                            <section id="admin" class="doc-section">
+                                <h2 class="section-title">Admin Panel Configuration</h2>
+                                <p>To install the admin, follow the steps below:</p>
+                                <div id="astep1"  class="section-block">
+                                    <h3 class="block-title">1. How to upload admin panel to server</h3>
+                                    <div class="code-block">
+                                        <ul class="list">
+                                            <li>First of all find the adminpanel folder from the downloaded package and upload on live server.</li>
+                                        </ul>
+                                        <img class="img-fluid" src="assets/images/addfolder_server.png" alt="elegant icons" />
+                                        <br>
+                                        <br>
+                                        <ul class="list">
+                                            <li>upload the admin panel file that has been zipped</li>
+                                        </ul>
+                                        <img class="img-fluid" src="assets/images/uploadadmin.png" alt="elegant icons" />
+                                        <img class="img-fluid" src="assets/images/adminzip.png" alt="elegant icons" />
+                                    </div><!--//code-block-->
+                                </div><!--//section-block-->
+
+                                <div id="astep2"  class="section-block">
+                                    <h3 class="block-title">2. Create database on server</h3>
+                                    <div class="code-block">
+                                        <p>you can create a new database or use the database that you have provided on your server manager</p>
+                                        <ul class="list">
+                                            <li>create a database.</li>
+                                        </ul>
+                                        <img class="img-fluid" src="assets/images/createdatabase.png" alt="elegant icons" />
+                                        <br>
+                                        <br>
+                                        <ul class="list">
+                                            <li>Import the database from the database folder.</li>
+                                        </ul>
+                                        <img class="img-fluid" src="assets/images/sqldatabase.png" alt="elegant icons" />
+                                    </div><!--//code-block-->
+                                </div><!--//section-block-->
+
+                                <div id="astep3"  class="section-block">
+                                    <h3 class="block-title">3. Setup admin panel</h3>
+                                    <div class="code-block">
+                                        <p>go to your cpanel file manager, find your admin panel folder that you uploaded before. you need to configure the config and database file.</p>
+                                        <ul class="list">
+                                            <li>click on application > config > config.php</li>
+                                        </ul>
+                                        <img class="img-fluid" src="assets/images/configimg.png" alt="elegant icons" />
+                                        <br>
+                                        <br>
+                                        <ul class="list">
+                                            <li id="fillin" class="section-block">fill in all the sections below</li>
+                                        </ul>
+                                        <img class="img-fluid" src="assets/images/allconfig.png" alt="elegant icons" />
+                                        <br>
+                                        <br>
+                                        <ul class="list">
+                                            <li>click on application > config > database.php</li>
+                                        </ul>
+                                        <img class="img-fluid" src="assets/images/databaseimgset.png" alt="elegant icons" />
+                                        <br>
+                                        <br>
+                                        <ul class="list">
+                                            <li>fill in this section according to the database that you created before</li>
+                                        </ul>
+                                        <img class="img-fluid" src="assets/images/alldatabaseset.png" alt="elegant icons" />
+                                    </div><!--//code-block-->
+                                </div><!--//section-block-->
+
+                                <div id="astep4"  class="section-block">
+                                    <h3 class="block-title">4. How to insert firebasedb</h3>
+                                    <div class="code-block">
+                                        <ul class="list">
+                                            <li><a class="scrollto" href="#firebasedb">click here</a> where to find firebasedb</li>
+                                            <li><a class="scrollto" href="#fillin">click here</a> where to insert firebasedb</li>
+                                        </ul>
+                                    </div><!--//code-block-->
+                                </div><!--//section-block-->
+
+                                <div id="astep5"  class="section-block">
+                                    <h3 class="block-title">5. How to insert purchase code</h3>
+                                    <div class="code-block">
+                                        <p>You can find out the purchase code on your Envato Purchase Statement</p>
+                                        <ul class="list">
+                                            <li>find your purchase code</li>
+                                        </ul>
+                                        <img class="img-fluid" src="assets/images/purchasecodestate.png" alt="elegant icons" />
+                                        <br>
+                                        <br>
+                                        <ul class="list">
+                                            <li><a class="scrollto" href="#fillin">click here</a> where to insert purchase code</li>
+                                        </ul>
+                                    </div><!--//code-block-->
+                                </div><!--//section-block-->
+
+                                <div id="astep6"  class="section-block">
+                                    <h3 class="block-title">6. Insert fcm server key</h3>
+                                    <div class="code-block">
+                                        <ul class="list">
+                                            <li><a class="scrollto" href="#step5">click here</a> how to find fcm server key</li>
+                                        </ul>
+                                        <img class="img-fluid" src="assets/images/fcm2.png" alt="elegant icons" />
+                                        <br>
+                                        <br>
+                                        <ul class="list">
+                                            <li><a class="scrollto" href="#fillin">click here</a> where to insert fcm server key</li>
+                                        </ul>
+                                    </div><!--//code-block-->
+                                </div><!--//section-block-->
+
+                                <div id="astep7"  class="section-block">
+                                    <h3 class="block-title">7. Mapbox Configuration</h3>
+                                    <div class="code-block">
+                                        <img class="img-fluid" src="assets/images/mapsapi.png" alt="elegant icons" />
+                                        <br>
+                                        <br>
+                                        <p>This application uses a third-party maps service from the mapbox platform, you must enter the mapbox access token.</p>
+                                        <p class="text-danger">mapbox may charge for this service <a href="https://www.mapbox.com/pricing/">click here</a> to find out more</p>
+                                        <h5>How to get mapbox access token :</h5>
+                                        <ul class="list">
+                                            <li>From your account's tokens page, click the Create a token button</li>
+                                            <li>From the token creation page, give your token a name and make sure the box next to the Downloads:Read scope is checked</li>
+                                            <li>Click the Create token button at the bottom of the page to create your token</li>
+                                            <li>The token you've created is a secret token, which means you will only have one opportunity to copy it somewhere secure</li>
+                                        </ul>
+                                        <ul class="list">
+                                            <li>create mapbox token.</li>
+                                        </ul>
+                                        <img class="img-fluid" src="assets/images/createmapbox.png" alt="elegant icons" />
+                                        <br>
+                                        <ul class="list">
+                                            <li>setting mapbox.</li>
+                                        </ul>
+                                        <img class="img-fluid" src="assets/images/mapboxset.png" alt="elegant icons" />
+                                        <br>
+                                        <ul class="list">
+                                            <li>copy mapbox token token.</li>
+                                        </ul>
+                                        <img class="img-fluid" src="assets/images/copytoken.png" alt="elegant icons" />
+                                        <ul class="list">
+                                            <li><a class="scrollto" href="#bstep7">click here</a> where to insert mapbox access token</li>
+                                        </ul>
+                                    </div><!--//code-block-->
+                                </div><!--//section-block-->
+
+                            <section id="android" class="doc-section">
+                                <h2 class="section-title">Android Configuration</h2>
+                                <p>In installing the Android application it will be more complex, follow the steps correctly so that the application can run properly, you can also watch the <a class="scrollto" href="#video">installation video</a> in the Android application installation section for more details.</p>
+                                <div id="bstep1"  class="section-block">
+                                    <h3 class="block-title">1. How to open project</h3>
+                                    <div class="code-block">
+                                        <ul class="list">
+                                            <li>open Android Studio > Open an Existing Android Studio Project > Select Your Project build.gradle file > ok</li>
+                                        </ul>
+                                        <img class="img-fluid" src="assets/images/andro1.png" alt="elegant icons" />
+                                        <br>
+                                        <br>
+                                        <ul class="list">
+                                            <li>browse to directory where you place "Ornidsapp" project and click OK.</li>
+                                        </ul>
+                                        <img class="img-fluid" src="assets/images/newfolder.png" alt="elegant icons" />
+                                    </div><!--//code-block-->
+                                </div><!--//section-block-->
+
+                                <div id="bstep2"  class="section-block">
+                                    <h3 class="block-title">2. How to change package name</h3>
+                                    <div class="code-block">
+                                        <p>after you open the android project, please change the package name first</p>
+                                        <ul class="list">
+                                            <li>close / unselect “Compact Empty Middle Packages”</li>
+                                        </ul>
+                                        <img class="img-fluid" src="assets/images/andro3.png" alt="elegant icons" />
+                                        <br>
+                                        <br>
+                                        <ul class="list">
+                                            <li>then, right click "refactor->rename" your package and rename it.</li>
+                                        </ul>
+                                        <img class="img-fluid" src="assets/images/andro4.png" alt="elegant icons" />
+                                        <h5 class="block-title">NOTE**: make sure the package name of each application matches what you entered when registering your application with firebase, <a class="scrollto" href="#step1">click here</a> how to register aplication on firebase</h5>
+                                    </div><!--//code-block-->
+                                </div><!--//section-block-->
+
+                                <div id="bstep3"  class="section-block">
+                                    <h3 class="block-title">3. How to change app name</h3>
+                                    <div class="code-block">
+                                        <ul class="list">
+                                            <li>open Android Studio >app > res > values > strings.xml</li>
+                                            <li>enter your app name inside "app_name" string tag</li>
+                                        </ul>
+                                        <img class="img-fluid" src="assets/images/andro6.png" alt="elegant icons" />
+                                    </div><!--//code-block-->
+                                </div><!--//section-block-->
+
+                                <div id="bstep4"  class="section-block">
+                                    <h3 class="block-title">4. How to change app icon</h3>
+                                    <div class="code-block">
+                                        <ul class="list">
+                                            <li>open Android Studio > app > res > all mipmap folder > ic_launcher.png</li>
+                                            <li>rename your icon with ic_launcher.png and paste in mipmap folder</li>
+                                            <li>replace all icons with particular size in particular folder</li>
+                                        </ul>
+                                        <img class="img-fluid" src="assets/images/andro14.png" alt="elegant icons" />
+                                    </div><!--//code-block-->
+                                </div><!--//section-block-->
+
+                                <div id="bstep5"  class="section-block">
+                                    <h3 class="block-title">5. How to insert url</h3>
+                                    <div class="code-block">
+                                        <ul class="list">
+                                            <li>select project > go to Constans > constans</li>
+                                            <li>add your url http://yoururl.com in line 15</li>
+                                        </ul>
+                                        <img class="img-fluid" src="assets/images/andro8.png" alt="elegant icons" />
+                                        <br>
+                                        <br>
+                                        <ul class="list">
+                                            <li>select project > go to res > xml > network_security_config.xml</li>
+                                            <li>add your url without http:// or https:// like "yoururl.com" in line 4</li>
+                                        </ul>
+                                        <img class="img-fluid" src="assets/images/andro17.png" alt="elegant icons" />
+                                    </div><!--//code-block-->
+                                </div><!--//section-block-->
+
+                                <div id="bstep6" class="section-block">
+                                    <h3 class="block-title">6. How to insert fcm server key</h3>
+                                    <div class="code-block">
+                                        <ul class="list">
+                                            <li>select project > go to Constans > constans</li>
+                                            <li>copy the fcm server key then paste it to constants, right on line 16.</li>
+                                        </ul>
+                                        <img class="img-fluid" src="assets/images/fcm.png" alt="elegant icons" />
+                                        <br>
+                                        <br>
+                                        <ul class="list">
+                                            <li><a class="scrollto" href="#step5">click here</a> how to find fcm server key</li>
+                                        </ul>
+                                    </div><!--//code-block-->
+                                </div><!--//section-block-->
+
+                                <div id="bstep7" class="section-block">
+                                    <h3 class="block-title">7. How to setting Mapbox</h3>
+                                    <div class="code-block">
+                                        <ul class="list">
+                                            <li>open Android Studio >app > res > values > strings.xml</li>
+                                            <li>enter your Mapbox access token "mapbox_access_token" string tag</li>
+                                        </ul>
+                                        <img class="img-fluid" src="assets/images/apikey.png" alt="elegant icons" />
+                                        <ul class="list">
+                                            <br>
+                                            <li>open Android Studio > gradle scripts > gradle.properties</li>
+                                            <li>enter your Mapbox access token on mapbox "MAPBOX_DOWNLOAD_TOKEN"</li>
+                                        </ul>
+                                        <img class="img-fluid" src="assets/images/gradlemap.png" alt="elegant icons" />
+                                    </div><!--//code-block-->
+                                </div><!--//section-block-->
+
+                                <div id="bstep8" class="section-block">
+                                    <h3 class="block-title">8. Generate signed APK then create new key store</h3>
+                                    <div class="code-block">
+                                        <ul class="list">
+                                            <li>click build > generate signed bundle/APK</li>
+                                        </ul>
+                                        <img class="img-fluid" src="assets/images/buildgenerate.png" alt="elegant icons" />
+                                        <br>
+                                        <br>
+                                        <img class="img-fluid" src="assets/images/signedapk.png" alt="elegant icons" />
+                                        <br>
+                                        <br>
+                                        <ul class="list">
+                                            <li>make new key store to get "JKS FILE"</li>
+                                        </ul>
+                                        <img class="img-fluid" src="assets/images/fillkeystore.png" alt="elegant icons" />
+                                    </div><!--//code-block-->
+                                </div><!--//section-block-->
+
+                                <div id="bstep9" class="section-block">
+                                    <h3 class="block-title">9. Configure project structure</h3>
+                                    <div class="code-block">
+                                        <ul class="list">
+                                            <li>open project structure(ctrl+Alt+Shift+S) then create new signing config.</li>
+                                        </ul>
+                                        <img class="img-fluid" src="assets/images/signingconfig.png" alt="elegant icons" />
+                                        <br>
+                                        <br>
+                                        <ul class="list">
+                                            <li>fill it with the key store and the "JKS FILE" that was created before.</li>
+                                        </ul>
+                                        <img class="img-fluid" src="assets/images/jksfile.png" alt="elegant icons" />
+                                        <br>
+                                        <br>
+                                        <ul class="list">
+                                            <li>click modules and than Click default config, choose your new signing config.</li>
+                                        </ul>
+                                        <img class="img-fluid" src="assets/images/choose1.png" alt="elegant icons" />
+                                        <br>
+                                        <br>
+                                        <ul class="list">
+                                            <li>click build variants on the release option, choose your new signing config.</li>
+                                        </ul>
+                                        <img class="img-fluid" src="assets/images/choose2.png" alt="elegant icons" />
+                                        <br>
+                                        <br>
+                                        <ul class="list">
+                                            <li>apply it and click "OK"</li>
+                                            <li>just ignore it if an error message appears on this step</li>
+                                        </ul>
+                                    </div><!--//code-block-->
+                                </div><!--//section-block-->
+
+                                <div id="bstep10" class="section-block">
+                                    <h3 class="block-title">10. How to get sha1 fingerprint</h3>
+                                    <div class="code-block">
+                                        <p>in an Android project there are 2 fingerprints for each application, debug and release.</p>
+                                        <ul class="list">
+                                            <li>run the signing report you will get a release and debug the SHA1 fingerprints</li>
+                                        </ul>
+                                        <img class="img-fluid" src="assets/images/signinreport.PNG" alt="elegant icons" />
+                                        <br>
+                                        <br>
+                                        <img class="img-fluid" src="assets/images/sha1.PNG" alt="elegant icons" />
+                                        <br>
+                                        <br>
+                                        <ul class="list">
+                                            <li>add your SHA1 fingerprints debug and release on each application and copy to each firebase project, <a class="scrollto" href="#step6">click here</a> where to insert the sha1 fingerprint on firebase</li>
+                                            <li>after entering all sha1 fingerprints for each application on firebase, download the google service json again and paste it on all applications</li>
+                                        </ul>
+                                        <img class="img-fluid" src="assets/images/json.PNG" alt="elegant icons" />
+                                        <h5 class="block-title">NOTE**: use the same google service json in all applications after you enter the sha1 fingerprint of all applications on firebase</h5>
+                                        <ul class="list">
+                                            <li>clean and rebuild project.</li>
+                                        </ul>
+                                    </div><!--//code-block-->
+                                </div><!--//section-block-->
+
+                            </section><!--//doc-section-->
+
+                            <section id="afterinstallation" class="doc-section">
+                                <h2 class="section-title">After Installation Configuration</h2>
+                                <p>there are several configurations that you have to do after installing this project</p>
+                                <div id="cstep1"  class="section-block">
+                                    <h3 class="block-title">1. Stripe configuration</h3>
+                                    <div class="code-block">
+                                        <ul class="list">
+                                            <li>open Admin panel go to settings menu click on stripe</li>
+                                            <li>enter your Secret key and published key to admin panel form input stripe</li>
+                                            <li>click "Update"</li>
+                                        </ul>
+                                        <img class="img-fluid" src="assets/images/stripe.png" alt="elegant icons" />
+                                    </div><!--//code-block-->
+                                </div><!--//section-block-->
+
+                                <div id="cstep2"  class="section-block">
+                                    <h3 class="block-title">2. Paypal configuration</h3>
+                                    <div class="code-block">
+                                        <p><a href="https://developer.paypal.com/docs/api/overview/">click here</a> for more detail about Paypal service</p>
+                                        <ul class="list">
+                                            <li>open Admin panel go to settings menu click on PayPal</li>
+                                            <li>enter your Secret key and PayPal currency</li>
+                                            <li>click "Update"</li>
+                                        </ul>
+                                        <img class="img-fluid" src="assets/images/paypal.png" alt="elegant icons" />
+                                    </div><!--//code-block-->
+                                </div><!--//section-block-->
+
+                                <div id="cstep4"  class="section-block">
+                                    <h3 class="block-title">4. SMTP configuration</h3>
+                                    <div class="code-block">
+                                        <p>Valid login details are required to send email using SMTP. You can see the explanation below.</p>
+                                        <ul class="list">
+                                            <li>SMTP Host = Name of the outgoing mail server.</li>
+                                            <li>Type of Encryption =  None / SSL / TLS</li>
+                                            <li>SMTP Port = The port used for sending e-mail to the mail server</li>
+                                            <li>SMTP Authentication = Yes / No. In most cases this option must be enabled.</li>
+                                            <li>SMTP Username = Username of the login used for the mail server.</li>
+                                            <li>SMTP Password = Password used to login to the mail server.</li>
+                                        </ul>
+                                        <h3>Configure SMTP on your server</h3>
+                                        <ul class="list">
+                                            <li>Please create a new email account via your cPanel hosting which will be used on later.</li>
+                                            <li>In cPanel hosting, please navigate to the Email Accounts section then click on Set Up Mail Client.</li>
+                                        </ul>
+                                        <img class="img-fluid" src="assets/images/smtpset1.png" alt="elegant icons" />
+                                        <br>
+                                        <br>
+                                        <ul class="list">
+                                            <li>You can check SMTP details below. There are the details of the required SMTP, for the example in this tutorial using port 465, depending on the hosting service you are using.</li>
+                                        </ul>
+                                        <img class="img-fluid" src="assets/images/smtpset2.png" alt="elegant icons" />
+                                        <br>
+                                        <br>
+                                        <ul class="list">
+                                            <li>remember the Outgoing Server and Port which will be needed later</li>
+                                        </ul>
+                                        <h3>Read Gmail messages on other email clients using POP</h3>
+                                        <ul class="list">
+                                            <li><a href="https://support.google.com/mail/answer/7104828?hl=en">click here</a> for more detail Gmail POP</li>
+                                        </ul>
+                                        <h3>Fill up the SMTP setting on admin panel</h3>
+                                        <ul class="list">
+                                            <li>after you got all detail of your SMTP, fill up all the SMTP setting form on admin panel</li>
+                                        </ul>
+                                        <img class="img-fluid" src="assets/images/smtp.png" alt="elegant icons" />
+                                    </div><!--//code-block-->
+                                </div><!--//section-block-->
+                            </section><!--//doc-section-->
+
+                            <section id="faq" class="doc-section">
+                                <h2 class="section-title">FAQ</h2>
+                                <p>Frequently asked questions</p>
+                                <div id="dstep1"  class="section-block">
+                                    <h3 class="block-title">Why is my email being responded to late and not even getting a reply?</h3>
+                                    <div class="code-block">
+                                        <ul class="list">
+                                            <li>So many questions come in via email about our items, we try to give direction and answer all these questions one by one, so we hope your patience awaits your turn.</li>
+                                            <li>We will reply to incoming emails on “Monday” to “Friday” at 10:00 to 17:00 on Indonesian local time, we also take breaks on our national holidays. Please remember the schedule above when your email has not yet received a reply.</li>
+                                            <li>We will not reply to emails that contain spam, violence, sarcasm, and contain other negative content that can waste our time, constructive comments will be appreciated so we hope you can be wise in this case.</li>
+                                            <li>Please check your spam list or sometimes this can also caused by a failure of the email system either from our side or from the recipient’s email system, if this happens we will confirm you through the item comment section to send email with a different address.</li>
+                                        </ul>
+                                    <h3 class="block-title">Are there another author support contacts?</h3>
+                                    <ul class="code-block">
+                                        <li>At this time we only provide support via email hello@ourdevelops.com and the codecanyon comment section.</li>
+                                    </ul>
+                                    <h3 class="block-title">Will it be charged again when there are updates of this item in the future?</h3>
+                                    <ul class="code-block">
+                                        <li>Price changes will occur when there are additional features, price changes only apply to new buyers, you only need to pay the current price. There are no additional costs after purchasing the item, additional fees are only charged if you get installation and customization services from us.</li>
+                                    </ul>
+                                    <h3 class="block-title">If I want to get instalation services, what steps do I have to do?</h3>
+                                    <ul class="code-block">
+                                        <li>Please send us an installation service request via email, please note that this service only covers basic installation only, if you want to change this application more advance according to your wishes please send a customization request.</li>
+                                    </ul>
+                                    <h3 class="block-title">If I want to get customization services, what steps do I have to do?</h3>
+                                    <ul class="code-block">
+                                        <li>Please create and send us the list of customizations that you want in great detail so that the discussion process is more effective, we will determine whether we can do it or reject it. You can send this list before making a purchase to avoid disappointment when we reject your customization while you have purchased our item.</li>
+                                    </ul>
+                                    <h3 class="block-title">Why I didn’t get a verification code?</h3>
+                                    <ul class="code-block">
+                                        <li>Make sure you have installed the application correctly, please follow the documentation that we have provided.</li>
+                                        <li>Make sure you have activated phone auth on firebase.</li>
+                                        <li>Make sure that your internet connection is stable.</li>
+                                    </ul>
+                                    <h3 class="block-title">Why is the application forced close when clicking on the topup button?</h3>
+                                    <ul class="code-block">
+                                        <li>Please disable paypal in the admin panel when not in use, and fill in the paypal key form with “1234”.</li>
+                                    </ul>
+                                    <h3 class="block-title">Has created an account driver and customer but why can’t it find the driver?</h3>
+                                    <ul class="code-block">
+                                        <li>Make sure you have activated the driver application, the button is on the application driver homepage.</li>
+                                        <li>Make sure the driver balance is sufficient according to the minimum balance requirements for each service on admin panel.</li>
+                                        <li>Make sure the driver is within the radius requirements for each service on admin panel.</li>
+                                    </ul>
+                                    <h3 class="block-title">Why my merchant does not appear on the customer application?</h3>
+                                    <ul class="code-block">
+                                        <li>Make sure the merchant has at least 1 active menu.</li>
+                                        <li>Make sure the merchant balance is sufficient according to the minimum balance requirements for each service on admin panel.</li>
+                                        <li>Make sure the merchant is within the radius requirements for each service on admin panel.</li>
+                                    </ul>
+                                    <h3 class="block-title">Why my merchant does not appear on the customer application?</h3>
+                                    <ul class="code-block">
+                                        <li>Make sure the merchant has at least 1 active menu.</li>
+                                        <li>Make sure the merchant balance is sufficient according to the minimum balance requirements for each service on admin panel.</li>
+                                        <li>Make sure the merchant is within the radius requirements for each service on admin panel.</li>
+                                    </ul>
+                                    <h3 class="block-title">Why i didn’t receive a driver / merchant registration confirmation email?</h3>
+                                    <ul class="code-block">
+                                        <li>Make sure you have confirmed the account that you registered in the admin panel.</li>
+                                        <li>Make sure you enter your SMTP data correctly, you can use SMTP through the server or if you use gmail it requires special settings, check here</li>
+                                    </ul>
+                                    <h3 class="block-title">Why the list of merchant features and merchant categories does not load when registering?</h3>
+                                    <ul class="code-block">
+                                        <li>When you do change the package name, automatically the url on the Android merchant changes according to your package name, this causes a connection failure between android and the server. Please replace the url again in utils > api > service > MerchantService which has changed “package name/...” to “merchant/...”.</li>
+                                    </ul>
+                                    <h3 class="block-title">Why merchant image didn’t appear in merchant applications?</h3>
+                                    <ul class="code-block">
+                                        <li>When you do change the package name automatically the url on the Android merchant changes according to your package name, this causes a connection failure between Android and the server. please replace the url at constant > Constant which has changed “images/package name” to “images/merchant”.</li>
+                                    </ul>
+                                    </div><!--//code-block-->
+                                </div><!--//section-block-->
+
+                                <div id="dstep2"  class="section-block">
+                                    <h3 class="block-title">2. Support</h3>
+                                    <div class="code-block">
+                                        <h5>Whats included in item support?</h5>
+                                        <ul class="list">
+                                            <li>Get an answers to common questions, we will answer questions about the item and how to use it, for example: “How do I make my application look like the item preview?”</li>
+                                            <li>Get an answer to a technical question about the item.</li>
+                                            <li>Reporting and discussing minor bugs in the item with the team, we will help with bug problems by updating the item.</li>
+                                            <li>Reporting and discussing minor bugs in the item with the team, we will help with bug problems by updating the item.</li>
+                                        </ul>
+                                        <h5>Whats not included in item support</h5>
+                                        <ul class="list">
+                                            <li>Item Customization</li>
+                                            <li>Item support does not include services to modify or expand items beyond the original features, style, and functionality, which have been described on the item page to customize the item according to your specific needs.</li>
+                                            <li>Item Installation</li>
+                                            <li>Make sure that you have intermediate knowledge about server compilation and Android applications, because installation on your server is not included in item support, if you don’t understand what and how this item works then, please don’t buy this item until you have enough technical people to understand this item, although you can request installation services from us but this service is subject to an additional fees.</li>
+                                            <li>Server or hosting environment problem</li>
+                                            <li>We do not support web hosting problems and your server environment, or problems with items that you install on your server, please check your ISP or web hosting provider. Or you can look for other documentation to solve problems related to your server and hosting.</li>
+                                        </ul>
+                                    </div><!--//code-block-->
+                                </div><!--//section-block-->
+
+                                <div id="dstep3"  class="section-block">
+                                    <h3 class="block-title">3. Refund request</h3>
+                                    <div class="code-block">
+                                        <p>We cannot refund because the products we sell on this platform are digital goods and cannot be “returned”, but we can refund if the item has not been downloaded, so before you buy, please check the demo that we provide and read the terms that we have made.</p>
+                                    </div><!--//code-block-->
+                                </div><!--//section-block-->
+
+                                <div id="dstep4"  class="section-block">
+                                    <h3 class="block-title">4. Note</h3>
+                                    <div class="code-block">
+                                        <h5 class="text-danger">Please Note</h5>
+                                        <ul class="list">
+                                            <li>It is not mandatory for the codecanyon author to provide support services, but we will keep answering questions and provide support regarding our items.</li>
+                                            <li>Make sure that you have intermediate knowledge about server compilation and Android applications, if you don’t understand what and how this item works then, please don’t buy this item until you have enough technical people to understand this item, although you can request installation services from us but this service is subject to an additional fees.</li>
+                                            <li>Find answers of your questions about our items here, make sure you have been looking for answers to your problems here before sending us a questions.</li>
+                                            <li>If you find a question that matches your problem, please follow the answers step by step until the last option. if the same error still occurs, please contact us.</li>
+                                            <li>We also expect a report from you if the answers we provide have not been able to solve your problem, so we will keep updating this library, and also we will keep adding to the list below with the most frequently asked problem reports.</li>
+                                        </ul>
+                                    </div><!--//code-block-->
+                                </div><!--//section-block-->
+                            </section><!--//doc-section-->
+
+                            <section id="rating" class="doc-section">
+                                <h2 class="section-title">Rating the app</h2>
+                                <p>If you like our app, we will highly appreciate if you can provide us a rating of 5. You can rate us from your Codecanyon.net Menu > Download page.</p>
+                                <h1>THANK YOU</h1>
+                            </section><!--//doc-section-->
+
+                        </div><!--//content-inner-->
+                    </div><!--//doc-content-->
+                    <div class="doc-sidebar col-md-3 col-12 order-0 d-none d-md-flex">
+                        <div id="doc-nav" class="doc-nav">
+	                        
+	                            <nav id="doc-menu" class="nav doc-menu flex-column sticky">
+
+                                    <a class="nav-link scrollto" href="#start">Start</a>
+                                    <nav class="doc-sub-menu nav flex-column">
+                                        <a class="nav-link scrollto" href="#introduction">1. Introduction</a>
+                                        <a class="nav-link scrollto" href="#whatsinclude">2. Whats Include</a>
+                                        <a class="nav-link scrollto" href="#changelog">3. Change Log</a>
+                                    </nav><!--//nav-->
+
+	                                <a class="nav-link scrollto" href="#firebase">Firebase Configuration</a>
+                                    <nav class="doc-sub-menu nav flex-column">
+                                        <a class="nav-link scrollto" href="#step1">1. Setup and create firebase project</a>
+                                        <a class="nav-link scrollto" href="#step2">2. Setup firebase realtime database</a>
+                                        <a class="nav-link scrollto" href="#step3">3. Setup firebase storage</a>
+                                        <a class="nav-link scrollto" href="#step4">4. Setup login phone</a>
+                                        <a class="nav-link scrollto" href="#step5">5. Get fcm server key</a>
+                                        <a class="nav-link scrollto" href="#step6">6. How to insert sha1 fingerprint</a>
+                                    </nav><!--//nav-->
+
+	                                <a class="nav-link scrollto" href="#admin">Admin panel configuration</a>
+                                    <nav class="doc-sub-menu nav flex-column">
+                                        <a class="nav-link scrollto" href="#astep1">1. How to upload admin panel to server</a>
+                                        <a class="nav-link scrollto" href="#astep2">2. Create database on server</a>
+                                        <a class="nav-link scrollto" href="#astep3">3. Setup admin panel</a>
+                                        <a class="nav-link scrollto" href="#astep4">4. How to insert firebasedb</a>
+                                        <a class="nav-link scrollto" href="#astep5">5. How to insert purchase code</a>
+                                        <a class="nav-link scrollto" href="#astep6">6. Insert fcm server key</a>
+                                        <a class="nav-link scrollto" href="#astep7">7. Mapbox Configuration</a>
+                                    </nav><!--//nav-->
+
+                                    <a class="nav-link scrollto" href="#android">Android Configuration</a>
+                                    <nav class="doc-sub-menu nav flex-column">
+                                        <a class="nav-link scrollto" href="#bstep1">1. How to open project</a>
+                                        <a class="nav-link scrollto" href="#bstep2">2. How to change package name</a>
+                                        <a class="nav-link scrollto" href="#bstep3">3. How to change app name</a>
+                                        <a class="nav-link scrollto" href="#bstep4">4. How to change app icon</a>
+                                        <a class="nav-link scrollto" href="#bstep5">5. How to insert url</a>
+                                        <a class="nav-link scrollto" href="#bstep6">6. How to insert fcm server key</a>
+                                        <a class="nav-link scrollto" href="#bstep7">7. How to setting google maps api</a>
+                                        <a class="nav-link scrollto" href="#bstep8">8. Genereate signed APK then create new key store</a>
+                                        <a class="nav-link scrollto" href="#bstep9">9. Configure project structure</a>
+                                        <a class="nav-link scrollto" href="#bstep10">10. How to get sha1 fingerprint</a>
+                                    </nav><!--//nav-->
+
+                                    <a class="nav-link scrollto" href="#afterinstallation">After Installation Configuration</a>
+                                    <nav class="doc-sub-menu nav flex-column">
+                                        <a class="nav-link scrollto" href="#cstep1">1. Stripe configuration</a>
+                                        <a class="nav-link scrollto" href="#cstep2">2. Paypal configuration</a>
+                                        <a class="nav-link scrollto" href="#cstep4">4. SMTP</a>
+                                    </nav><!--//nav-->
+
+                                    <a class="nav-link scrollto" href="#faq">FAQ</a>
+                                    <nav class="doc-sub-menu nav flex-column">
+                                        <a class="nav-link scrollto" href="#dstep1">1. FAQ</a>
+                                        <a class="nav-link scrollto" href="#dstep2">2. Support</a>
+                                        <a class="nav-link scrollto" href="#dstep3">3. Refund request</a>
+                                        <a class="nav-link scrollto" href="#dstep4">4. Note</a>
+                                    </nav><!--//nav-->
+
+                                    <a class="nav-link scrollto" href="#rating">Rating The App</a>
+
+	                            </nav><!--//doc-menu-->
+	                        
+                        </div>
+                    </div><!--//doc-sidebar-->
+                </div><!--//doc-body-->              
+            </div><!--//container-->
+        </div><!--//doc-wrapper-->
+        
+    </div><!--//page-wrapper-->
+    
+    <footer id="footer" class="footer text-center">
+        <div class="container">
+            <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
+            <small class="copyright">Copyright Ourdevelops 2020 <i class="fas fa-heart"></i>Documnetation Design by <a href="https://themes.3rdwavemedia.com/" target="_blank">Xiaoying Riley</a> for developers</small>
+            
+        </div><!--//container-->
+    </footer><!--//footer-->
+    
+     
+    <!-- Main Javascript -->          
+    <script type="text/javascript" src="assets/plugins/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/prism/prism.js"></script>    
+    <script type="text/javascript" src="assets/plugins/jquery-scrollTo/jquery.scrollTo.min.js"></script>      
+    <script type="text/javascript" src="assets/plugins/stickyfill/dist/stickyfill.min.js"></script>                                                             
+    <script type="text/javascript" src="assets/js/main.js"></script>
+    
+</body>
+</html> 
+

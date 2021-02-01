@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:background="@color/white"
+    android:paddingTop="10dp"
+    app:ignore="NamespaceTypo">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp">
+
+            <RelativeLayout
+                android:layout_width="80dp"
+                android:layout_height="80dp">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/imagemenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/image_placeholder"
+                    card_view:riv_corner_radius="10dp" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/clicked"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <customfonts.TextViewSFProDisplayMedium
+                    android:id="@+id/namamenu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:text="Bakso Tampar"
+                    android:textSize="18dp" />
+
+                <customfonts.TextViewSFProDisplayRegular
+                    android:id="@+id/descmenu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:maxLines="3"
+                    android:text="gcgglseclec acuacace iuhace c ccc jhaciavc acehacca ecae ac cvvice ceca uhcaecagcaeav."
+                    android:textSize="14dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <customfonts.TextViewSFProDisplayMedium
+                        android:id="@+id/hargapromo"
+                        android:visibility="visible"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:maxLines="1"
+                        android:padding="3dp"
+                        android:text="$12,00"
+                        android:textColor="@color/gray"
+                        android:textSize="15dp" />
+
+                    <customfonts.TextViewSFProDisplayMedium
+                        android:id="@+id/hargamenu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="10dp"
+                        android:background="@drawable/button_round_1"
+                        android:backgroundTint="@color/colorgradient"
+                        android:maxLines="1"
+                        android:padding="3dp"
+                        android:text="$12,00"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/activemenu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="10dp"
+                    android:checked="true"
+                    app:thumbTint="@color/colorgradient" />
+
+                <customfonts.TextViewSFProDisplayRegular
+                    android:id="@+id/deletemenu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text="delete"
+                    android:textColor="@color/colorgradient" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/gray" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/promobadge"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="6dp"
+        android:background="@drawable/promobadge"
+        android:elevation="15dp"
+        android:outlineProvider="none">
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:duration="800">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:background="@drawable/promobadge"
+                android:backgroundTint="@color/light_gray" />
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+
+    </FrameLayout>
+
+
+</RelativeLayout>

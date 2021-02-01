@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainlayout"
+    android:layout_width="match_parent"
+    android:layout_height="65dp"
+    android:background="@android:color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                    <customfonts.TextViewSFProDisplayMedium
+                        android:id="@+id/namamenu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:maxLines="1"
+                        android:text="Bakso Tampar"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal">
+
+                    <customfonts.TextViewSFProDisplayRegular
+                        android:id="@+id/texttanggal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:singleLine="true"
+                        android:text="Quantity"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                        android:textColor="@color/black"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                    <customfonts.TextViewSFProDisplayRegular
+                        android:id="@+id/item"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:gravity="right"
+                        android:singleLine="true"
+                        android:text=":"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                        android:textColor="@color/black"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                    <customfonts.TextViewSFProDisplayRegular
+                        android:id="@+id/jumlahmenu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:gravity="right"
+                        android:singleLine="true"
+                        android:text="2"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                        android:textColor="@color/black"
+                        android:textSize="14dp"/>
+
+                </LinearLayout>
+
+                <customfonts.TextViewSFProDisplayRegular
+                    android:id="@+id/note"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:gravity="right"
+                    android:singleLine="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Bawangnya yang banyak"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    android:textColor="@color/gray"
+                    android:textSize="14dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+
+                <customfonts.TextViewSFProDisplayMedium
+                    android:id="@+id/jumlahhargamenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="$12,00"
+                    android:textSize="15dp"
+                    android:paddingRight="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="right"/>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+</RelativeLayout>
+

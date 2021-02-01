@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ourdevelops.ornids"
+    android:installLocation="auto">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:name="com.ourdevelops.ornids.constants.BaseApp"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:allowBackup="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:supportsRtl="false"
+        android:theme="@style/AppTheme"
+        tools:replace="android:supportsRtl,android:allowBackup">
+
+        <activity android:name="com.ourdevelops.ornids.activity.PromoActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+
+        <activity android:name="com.ourdevelops.ornids.activity.DetailOrderActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name="com.ourdevelops.ornids.activity.MapsMerchantActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name="com.ourdevelops.ornids.activity.DetailMerchantActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name="com.ourdevelops.ornids.activity.PicklocationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name="com.ourdevelops.ornids.activity.AllMerchantActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name="com.ourdevelops.ornids.activity.AllNewsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name="com.ourdevelops.ornids.activity.WalletActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name="com.ourdevelops.ornids.activity.ChatActivity"
+            android:screenOrientation="portrait" />
+
+        <service android:name="com.ourdevelops.ornids.utils.api.service.MessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.ourdevelops.ornids.activity.RateActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Login_phone"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name="com.ourdevelops.ornids.activity.CreditcardActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Login_phone"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+
+        <activity
+            android:name="com.ourdevelops.ornids.activity.StripePaymentActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Login_phone"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name="com.ourdevelops.ornids.activity.WithdrawActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Login_phone"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name="com.ourdevelops.ornids.activity.SplashActivity"
+            android:noHistory="true"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ourdevelops.ornids.activity.IntroActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ourdevelops.ornids.activity.NewsDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ourdevelops.ornids.activity.TopupSaldoActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name="com.ourdevelops.ornids.activity.RideCarActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ourdevelops.ornids.activity.RentCarActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ourdevelops.ornids.activity.SendActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ourdevelops.ornids.activity.SendDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ourdevelops.ornids.activity.ProgressActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ourdevelops.ornids.activity.PrivacyActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/noActionBar" />
+        <activity
+            android:name="com.ourdevelops.ornids.activity.RegisterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/noActionBar" />
+        <activity
+            android:name="com.ourdevelops.ornids.activity.EditProfileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/noActionBar" />
+        <activity
+            android:name="com.ourdevelops.ornids.activity.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Login_phone"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name="com.ourdevelops.ornids.activity.ForgotPassActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Login_phone"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name="com.ourdevelops.ornids.activity.ChangepassActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Login_phone"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name="com.ourdevelops.ornids.activity.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Login_phone" />
+
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.ourdevelops.ornids.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+    </application>
+
+</manifest>
